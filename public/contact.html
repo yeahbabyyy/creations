@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creations</title>
+    <script src="https://kit.fontawesome.com/4929c5a6a8.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" name="description" content="Creations" name= "keywords"content="diy, handmade, crafts" name="vievport content" width= device-width , initial-scale = 1.0 >
+    <link rel="icon" type="image/x-icon" href="/public/favicon.png">
+</head>
+<body>
+    <script src="index.js"></script>
+
+<section id="header">
+    <img src="UnionlogoThis.png"  alt="logo">
+    <form>
+        <input type="text" id="search" placeholder="Search products...">
+        <div id="product-container"></div>
+
+        </form>
+        
+
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" a href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a i class="fa-regular fa-user" class="user-pic" onclick="toggleMenu()"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times" ></i></a>
+
+            <li id="lg-bag"><a href="myshop.html"><i class="fa-solid fa-shop"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+
+ 
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class ="user-info">
+                    <img src="woman.png" id="sub-menu-profile-image" alt="Sub Menu Profile Image">
+                    <h2 id="user-name">Caroline Taylor</h2>
+    </div>
+    <hr>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-user-pen"></i><button type="button"onclick="window.location.href='editprofile.html'"> 
+            <p>Edit Profile</p></button>
+          <span id="span1">></span>
+    </a>
+
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-truck-fast"></i><button type="button"onclick="window.location.href='myorders.html'"> 
+            <p>My Orders</p></button>
+        <span id="span2">></span>
+</a>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-gear"></i> </i> <button type="button"
+        onclick="window.location.href='settings.html'"> <p>Settings & Privacy</p></button>
+        <span id="span3">></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-info"></i> <button type="button" onclick="window.location.href='helpandsupport.html'"> <p>Help & Support</p></button>
+        <span id="span4">></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <p>Logout</p>
+        <span id="span5">></span>
+    </a>
+
+</div>
+</div>
+</div>
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+    </section>
+
+    <section id="page-header" class="about-header" >
+     
+        <h2>Let's talk!</h2>
+     
+        
+    </section>
+
+    <section id="contact-details" class="section-p1">
+<div class="details">
+    <span>GET IN TOUCH</span>
+    <h3>Visit our agency location or contact us today</h3>
+    <div>
+     <ul> <li>
+            <i class="fa-solid fa-map-pin"></i>
+            <p>Cieszyńska 7A ,02-716 Warszawa</p>
+         </li>
+         <li>
+            <i class="far fa-envelope"></i>
+            <p>contact_creations@gmail.com</p>
+        </li>
+        <li>
+            <i class="fas fa-phone-alt"></i>
+            <p>(+48)503-414-800</p>
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday to Saturday: 9.00am - 17.00pm </p>
+        </li>
+   </ul> </div>
+</div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9785.308403594758!2d21.015446875269895!3d52.1829267515935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47193385d0a9e929%3A0x3495d9741ed67eac!2sCieszy%C5%84ska%207a%2C%2002-716%20Warszawa!5e0!3m2!1spl!2spl!4v1716399758704!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+    </section>
+
+    <section id="form-details" class="section-p1">
+        <form id="contactForm">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We'd love to hear from you</h2>
+            <input type="text" id="name0" placeholder="Your Name" required>
+            <input type="email" id="email0" placeholder="E-mail" required>
+            <input type="text" id="subject0" placeholder="Subject" required>
+            <textarea id="message0" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit0" class="normal">Submit</button>
+        </form>
+        <div class="message0" id="formMessage"></div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <button id="footerbtn" onclick="window.location.href='contact.html'">Contact</button>
+            <p><strong>Address:</strong> Cieszyńska; 02-716 Warsaw</p>
+            <p><strong>Phone:</strong> (+48) 503 414 800</p>
+            <p><strong>Hours:</strong> 09:00-17:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <button id="footerbtn" onclick="window.location.href='about.html'">About</button>
+            <button id="footerinfo" onclick="window.location.href='about.html'">About Us</button>
+            <button id="footerinfo" onclick="window.location.href='myorders.html'">Delivery informations</button>
+            <button id="footerinfo" onclick="window.location.href='settings.html'">Setting</button>
+            <button id="footerinfo" onclick="window.location.href='settings.html'">Terms and Conditions</button>
+            <button id="footerinfo" onclick="window.location.href='contact.html'">Contact</button>
+    
+        </div>
+        <div class="col">
+            <button id="footerbtn" onclick="window.location.href='login.html'">My Account</button>
+            <button id="footerinfo" onclick="window.location.href='login.html'">Sign in</button>
+            <button id="footerinfo" onclick="window.location.href='cart.html'">View cart</button>
+            <button id="footerinfo" onclick="window.location.href='myorders.html'">Track My Order</button>
+            <button id="footerinfo" onclick="window.location.href='helpandsupport.html'">Help</button>
+    
+        </div>
+    
+        <div class="col pay">
+            <h4>Secured Payment Gateways</h4>
+            <img src="pay.jpeg">
+        </div>
+        <div class="copyright">
+            <h4>© 2024 Creations Poland</h4>
+        </div>
+    </footer>
+
+    <script>
+        let subMenuProfilePic = document.getElementById('sub-menu-profile-image');
+        let userName = document.getElementById('user-name');
+
+        // Load the saved image and name from local storage if they exist
+        document.addEventListener('DOMContentLoaded', () => {
+            let savedImage = localStorage.getItem('profileImage');
+            if (savedImage) {
+                subMenuProfilePic.src = savedImage;
+            }
+
+            let savedName = localStorage.getItem('userName');
+            if (savedName) {
+                userName.textContent = savedName;
+            }
+        });
+    </script>
+</body>
+</html>

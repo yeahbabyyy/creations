@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creations</title>
+    <script src="https://kit.fontawesome.com/4929c5a6a8.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" name="description" content="Creations" name= "keywords"content="diy, handmade, crafts" name="vievport content" width= device-width , initial-scale = 1.0 >
+    <link rel="icon" type="image/x-icon" href="/public/favicon.png">
+</head>
+<body>
+    <script src="index.js"></script>
+
+<section id="header">
+    <img src="UnionlogoThis.png"  alt="logo">
+    
+    <form>
+        <input type="text" id="search" placeholder="Search products...">
+        <div id="product-container"></div>
+
+        </form>
+        
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="shop.html">Shop</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li id="lg-bag"><a href="#" i class="fa-regular fa-user" class="user-pic" onclick="toggleMenu()"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times" ></i></a>
+
+            <li id="lg-bag"><a href="myshop.html"><i class="fa-solid fa-shop"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+
+  
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class ="user-info">
+                    <img src="woman.png" id="sub-menu-profile-image" alt="Sub Menu Profile Image">
+                    <h2 id="user-name">Caroline Taylor</h2>
+    </div>
+    <hr>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-user-pen"></i><button type="button"onclick="window.location.href='editprofile.html'"> 
+            <p>Edit Profile</p></button>
+          <span id="span1">></span>
+    </a>
+
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-truck-fast"></i><button type="button"onclick="window.location.href='myorders.html'"> 
+            <p>My Orders</p></button>
+        <span id="span2">></span>
+</a>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-gear"></i> </i> <button type="button"
+        onclick="window.location.href='settings.html'"> <p>Settings & Privacy</p></button>
+        <span id="span3">></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-info"></i> <button type="button" onclick="window.location.href='helpandsupport.html'"> <p>Help & Support</p></button>
+        <span id="span4">></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <p>Logout</p>
+        <span id="span5">></span>
+    </a>
+
+</div>
+</div>
+</div>
+
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+    </section>
+
+    <section id="page-header" class="about-header" >
+     
+        <h2>Who We Are?</h2>
+        
+    </section>
+
+    <section id="about-header" class="section-p1">
+<img id="wire" src="wire-sculpture-5715170_1280.jpg">
+<div>
+      <h3>Our marketplace is a haven for those who cherish the beauty of unique, handmade, and vintage items.</h3>    
+   <h3>Each piece in our collection tells a story, crafted with love and care by skilled artisans or preserved with nostalgia from bygone eras.
+    Whether you're searching for a one-of-a-kind gift, a special addition to your home decor, or a vintage treasure, our platform 
+    connects you with sellers who offer extraordinary items that you won't find anywhere else. </h3>
+<h3> Discover the charm and individuality of our curated selections and add a touch of history and artistry to your life.</h3>
+   
+
+</div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <button id="footerbtn" onclick="window.location.href='contact.html'">Contact</button>
+            <p><strong>Address:</strong> Cieszyńska; 02-716 Warsaw</p>
+            <p><strong>Phone:</strong> (+48) 503 414 800</p>
+            <p><strong>Hours:</strong> 09:00-17:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <button id="footerbtn" onclick="window.location.href='about.html'">About</button>
+            <button id="footerinfo" onclick="window.location.href='about.html'">About Us</button>
+            <button id="footerinfo" onclick="window.location.href='myorders.html'">Delivery informations</button>
+            <button id="footerinfo" onclick="window.location.href='settings.html'">Setting</button>
+            <button id="footerinfo" onclick="window.location.href='settings.html'">Terms and Conditions</button>
+            <button id="footerinfo" onclick="window.location.href='contact.html'">Contact</button>
+    
+        </div>
+        <div class="col">
+            <button id="footerbtn" onclick="window.location.href='login.html'">My Account</button>
+            <button id="footerinfo" onclick="window.location.href='login.html'">Sign in</button>
+            <button id="footerinfo" onclick="window.location.href='cart.html'">View cart</button>
+            <button id="footerinfo" onclick="window.location.href='myorders.html'">Track My Order</button>
+            <button id="footerinfo" onclick="window.location.href='helpandsupport.html'">Help</button>
+    
+        </div>
+    
+        <div class="col pay">
+            <h4>Secured Payment Gateways</h4>
+            <img src="pay.jpeg">
+        </div>
+        <div class="copyright">
+            <h4>© 2024 Creations Poland</h4>
+        </div>
+    </footer>
+    <script>
+        let subMenuProfilePic = document.getElementById('sub-menu-profile-image');
+        let userName = document.getElementById('user-name');
+
+        // Load the saved image and name from local storage if they exist
+        document.addEventListener('DOMContentLoaded', () => {
+            let savedImage = localStorage.getItem('profileImage');
+            if (savedImage) {
+                subMenuProfilePic.src = savedImage;
+            }
+
+            let savedName = localStorage.getItem('userName');
+            if (savedName) {
+                userName.textContent = savedName;
+            }
+        });
+    </script>
+</body>
+</html>
